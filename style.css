@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.gridFondo{
+    display: grid;
+    grid-template-rows: 60vh 40vh;
+}
+
+.section1, .section2{
+    position: relative;
+}
+
+.section2{
+    background-color: rgb(5, 161, 0);
+}
+.section1{
+    background-color: rgb(157, 244, 255);
+}
+
+#arbol{
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    margin-left: 160px;
+    transform: translateY(20px);
+    z-index: +1;
+}
+#casa{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    margin-right: 160px;
+    transform: translateY(20px);
+    z-index: +1;
+}
+#sol{
+    opacity: 10%;
+    animation-delay: 20s;
+    animation-name: sol;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-right: 100px;
+    width: 260px;
+    z-index: +1;
+}
+
+#nube{
+    animation-name: nube;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 0;
+    margin-left: 100vw;
+    width: 26vw;
+    z-index: +2;
+}
+
+#lluvia{
+    opacity: 0%;
+    animation-name: lluvia;
+    animation-duration: 20s;
+    width: 18vw;
+    height: 320px;
+    margin-top: 140px;
+    margin-left: 39vw;
+    position: absolute;
+    z-index: +1;
+}
+
+#flor{
+    opacity: 0%;
+    animation-delay: 22s;
+    animation-name: flor;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    margin-left: 30vw;
+    transform: translateY(10px);
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    z-index: +1;
+}
+
+@keyframes nube {
+    0%{
+        margin-left: 100vw;
+    }
+    25%{
+        margin-left: 35vw;
+    }
+    75%{
+        margin-left: 35vw;
+    }
+    100%{
+        margin-left: -60vw;
+    }
+}
+
+@keyframes lluvia {
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    75%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+@keyframes sol {
+    0%{
+        opacity: 10%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 10%;
+    }
+}
+
+@keyframes flor {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
