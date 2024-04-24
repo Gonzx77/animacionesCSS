@@ -23,8 +23,8 @@
 #arbol{
     position: absolute;
     bottom: 0;
-    width: 200px;
-    margin-left: 160px;
+    width: 16vw;
+    margin-left: 8vw;
     transform: translateY(20px);
     z-index: +1;
 }
@@ -32,8 +32,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 200px;
-    margin-right: 160px;
+    width: 18vw;
+    margin-right: 8vw;
     transform: translateY(20px);
     z-index: +1;
 }
@@ -46,8 +46,8 @@
     position: absolute;
     right: 0;
     top: 0;
-    margin-top: 20px;
-    margin-right: 100px;
+    margin-top: 2vw;
+    margin-right: 6vw;
     width: 260px;
     z-index: +1;
 }
@@ -68,7 +68,7 @@
     animation-name: lluvia;
     animation-duration: 20s;
     width: 18vw;
-    height: 320px;
+    height: 62vh;
     margin-top: 140px;
     margin-left: 39vw;
     position: absolute;
@@ -81,11 +81,11 @@
     animation-name: flor;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    margin-left: 30vw;
+    margin-left: 12vw;
     transform: translateY(10px);
     position: absolute;
     bottom: 0;
-    width: 60px;
+    width: 5vw;
     z-index: +1;
 }
 
