@@ -77,11 +77,11 @@
 
 #flor{
     opacity: 0%;
-    animation-delay: 22s;
+    animation-delay: 20s;
     animation-name: flor;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    margin-left: 12vw;
+    margin-left: 27vw;
     transform: translateY(10px);
     position: absolute;
     bottom: 0;
